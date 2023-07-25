@@ -1,4 +1,5 @@
 # UnityHelpers
 Useful tools and helpers I use in Unity.
 
-ko_fi: KingRecycle
+## Tools Menu
+An option to setup default directories for a new project.
