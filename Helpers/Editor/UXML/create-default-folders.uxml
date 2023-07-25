@@ -1,0 +1,30 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement style="flex-grow: 0; background-color: rgba(0, 0, 0, 0);">
+        <ui:VisualElement name="RootToggleGroup" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); justify-content: flex-start; align-items: flex-start; flex-direction: row;">
+            <ui:Toggle label="Include Root Folder" name="rootToggle" value="false" style="align-self: auto; align-items: stretch;" />
+            <ui:TextField picking-mode="Ignore" label="Root Name" value="_Project" name="rootTextField" style="width: auto; justify-content: flex-start; align-items: stretch; flex-direction: row; max-width: 250px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ScriptsToggleGroup" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); justify-content: flex-start; align-items: flex-start; flex-direction: row;">
+            <ui:Toggle label="Scripts Folder" name="scriptsToggle" value="true" style="align-self: auto; align-items: stretch;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="SpritesToggleGroup" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); justify-content: flex-start; align-items: flex-start; flex-direction: row;">
+            <ui:Toggle label="Sprites Folder" name="spritesToggle" value="true" style="align-self: auto; align-items: stretch;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ScenesToggleGroup" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); justify-content: flex-start; align-items: flex-start; flex-direction: row;">
+            <ui:Toggle label="Scenes Folder" name="scenesToggle" value="true" style="align-self: auto; align-items: stretch;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="PrefabsToggleGroup" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); justify-content: flex-start; align-items: flex-start; flex-direction: row;">
+            <ui:Toggle label="Prefabs Folder" name="prefabsToggle" value="true" style="align-self: auto; align-items: stretch;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="MaterialsToggleGroup" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); justify-content: flex-start; align-items: flex-start; flex-direction: row;">
+            <ui:Toggle label="Materials Folder" name="materialsToggle" value="true" style="align-self: auto; align-items: stretch;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="TexturesToggleGroup" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); justify-content: flex-start; align-items: flex-start; flex-direction: row;">
+            <ui:Toggle label="Textures Folder" name="texturesToggle" value="true" style="align-self: auto; align-items: stretch;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="AudioToggleGroup" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); justify-content: flex-start; align-items: flex-start; flex-direction: row;">
+            <ui:Toggle label="Audio Folder" name="audioToggle" value="true" style="align-self: auto; align-items: stretch;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:Button text="Create Folders" display-tooltip-when-elided="true" name="createFoldersButton" />
+</ui:UXML>
